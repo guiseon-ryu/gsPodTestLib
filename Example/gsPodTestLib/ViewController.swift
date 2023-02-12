@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import gsPodTestLib
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        Aclass().log("!!pod test!!!")
+
+        gsTest.instance().log2(msg: "gsgsgs")
     }
 
     override func didReceiveMemoryWarning() {
